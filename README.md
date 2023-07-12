@@ -1,84 +1,50 @@
-# Crypto Website Template
+# Uniswap Labs Widgets
 
-This is the source code for [ElonCatMoon](https://www.eloncatmoon.com/).
+[![npm](https://img.shields.io/npm/v/@uniswap/widgets)](https://www.npmjs.com/package/@uniswap/widgets)
+[![Unit tests](https://github.com/Uniswap/interface/actions/workflows/test.yaml/badge.svg)](https://github.com/Uniswap/interface/actions/workflows/test.yaml)
+[![Integration tests](https://github.com/Uniswap/interface/actions/workflows/e2e.yaml/badge.svg)](https://github.com/Uniswap/interface/actions/workflows/e2e.yaml)
+[![Lint](https://github.com/Uniswap/interface/actions/workflows/lint.yml/badge.svg)](https://github.com/Uniswap/interface/actions/workflows/lint.yml)
+[![Crowdin](https://badges.crowdin.net/uniswap-interface/localized.svg)](https://crowdin.com/project/uniswap-interface)
 
-![ElonCatMoon Website](src/images/ecat-vid.gif)
+The `@uniswap/widgets` package is an [npm package](https://www.npmjs.com/package/@uniswap/widgets) of React components used to provide subsets of the Uniswap Protocol functionality in a small and configurable user interface element.
 
-This website is written with react.js. I have it hosted on Netlify if you have any questions or comments, please feel free to reach out to me at [My Twitter](https://twitter.com/TheTobyMiller) or open an issue on this repository.
+# Uniswap Labs Swap Widget
 
-## Use
+The Swap Widget bundles the whole swapping experience into a single React component that developers can easily embed in their app with one line of code. 
 
-Feel free to use this as a template for your own website.
+![swap widget screenshot](https://raw.githubusercontent.com/Uniswap/interface/main/src/assets/images/widget-screenshot.png)
 
-The code is not super optimized, but it works. If you have any suggestions, please let me know.
+You can customize the theme (colors, fonts, border radius, and more) to match the style of your application. You can also configure your own default token list and optionally set a convenience fee on swaps executed through the widget on your site.
 
-## Getting Started with Create React App
+## Installation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Install the widgets library via `npm` or `yarn`.
 
-## Available Scripts
+```js
+yarn add @uniswap/widgets
+```
+```js
+npm i --save @uniswap/widgets
+```
 
-In the project directory, you can run:
+## Documentation
 
-### `npm start`
+- [overview](https://docs.uniswap.org/sdk/widgets/swap-widget)
+- [api reference](https://docs.uniswap.org/sdk/widgets/swap-widget/api)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Example Apps
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Uniswap Labs maintains two demo apps in branches of the [widgets-demo](https://github.com/Uniswap/widgets-demo) repo:
 
-### `npm test`
+- [NextJS](https://github.com/Uniswap/widgets-demo/tree/nextjs)
+- [Create React App](https://github.com/Uniswap/widgets-demo/tree/cra)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Others have also also released the widget in production to their userbase:
 
-### `npm run build`
+- [OpenSea](https://opensea.io/)
+- [Friends With Benefits](https://www.fwb.help/)
+- [Oasis](https://oasis.app/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Legal notice
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Uniswap Labs encourages integrators to evaluate their own regulatory obligations when integrating this widget into their products, including, but not limited to, those related to economic or trade sanctions compliance.
