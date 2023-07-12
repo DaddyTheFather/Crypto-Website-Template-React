@@ -5,7 +5,7 @@ import { providers, ethers } from 'ethers';
 import detectEthereumProvider from '@metamask/detect-provider';
 import { SwapWidget } from '@uniswap/widgets'
 
-const infuraId = process.env.REACT_APP_INFURA_ID;
+const infuraId = process.env.a48d2ea452754524ab762c919651cfbf;
 const JsonRpcEndpoint = `https://mainnet.infura.io/v3/${a48d2ea452754524ab762c919651cfbf}`;
 const JsonRpcProvider = new providers.JsonRpcProvider(JsonRpcEndpoint);
 const provider = new ethers.providers.Web3Provider(JsonRpcProvider);
