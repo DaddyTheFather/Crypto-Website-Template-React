@@ -63,14 +63,14 @@ function Fixture() {
   const defaultOutputToken = useOption('defaultOutputToken', { options: currencies })
   const [defaultOutputAmount] = useValue('defaultOutputAmount', { defaultValue: 0 })
 
-  const [brandedFooter] = useValue('brandedFooter', { defaultValue: true })
+  const [brandedFooter] = useValue('brandedFooter', { defaultValue: false })
   const [hideConnectionUI] = useValue('hideConnectionUI', { defaultValue: false })
-  const [pageCentered] = useValue('pageCentered', { defaultValue: false })
+  const [pageCentered] = useValue('pageCentered', { defaultValue: true })
 
   const [width] = useValue('width', { defaultValue: 360 })
 
   const [theme, setTheme] = useValue('theme', { defaultValue: defaultTheme })
-  const [darkMode] = useValue('darkMode', { defaultValue: false })
+  const [darkMode] = useValue('darkMode', { defaultValue: true })
   useEffect(() => setTheme((theme) => ({ ...theme, ...(darkMode ? darkTheme : lightTheme) })), [darkMode, setTheme])
 
   const defaultNetwork = useOption('defaultChainId', {
